@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Register.css" />
+    <link rel="icon" href="47774.icon.png" />
+  </head>
+  <body>
+    <h1>Register</h1>
+    
+    <!-- Form section -->
+    <div>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        <label>
+        <input type="checkbox" value="checkbox" />
+        Confirm your application
+        </label>
+        <input type="submit" value="Register">
+
+      </form>
+      <h3>&copy; Mohamed Medhat Elngar</h3>
+    </div>
+    
+    <!-- Picture section -->
+    
+    
+    <script>
+      const profilePictureInput = document.getElementById("profile-picture");
+      const previewImage = document.getElementById("preview");
+      
+      profilePictureInput.addEventListener("change", function() {
+        const file = this.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.addEventListener("load", function() {
+            previewImage.setAttribute("src", this.result);
+            previewImage.style.display = "block";
+          });
+          reader.readAsDataURL(file);
+        }
+      });
+    </script>
+  </body>
+</html>

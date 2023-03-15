@@ -1,0 +1,92 @@
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-image: url('038.gif');
+}
+
+
+
+form {
+    padding: 20px;
+    margin: 8% auto 0;
+    /*box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);*/
+    width: 300px;
+    background: #fff;
+    text-align: center;
+    background-image: linear-gradient(to bottom left,rgb(215, 201, 201),rgb(132, 155, 169),rgb(151, 53, 53));
+    border-radius: 30px;
+    background-image: url('eran_mendel_2.gif');
+
+    
+}
+
+input[type='text'],
+input[type='password']{
+    border-radius: 10px;
+    opacity: .5;
+    width: 90%;
+    
+}
+
+form .login {
+    color: #fff;
+    background-color: #1c8adb;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: all .50s ease;
+    box-shadow: #1c8adb 0px 1px 25px ;
+}
+
+form .or {
+    border-radius: 10px;
+    background-color: rgb(189, 180, 180);
+    padding: 2px;
+    width: min-content;
+    margin: 10% 50%;
+   text-align: center;
+
+}
+
+form p a {
+    text-decoration: none;
+    color: #1c8adb;
+}
+
+h3 {
+    color: #1c8adb;
+    align-items: center;
+    text-align: center;
+}
+
+.socialicons a{
+    
+   text-decoration: none;
+   color: #1c8adb;
+}
+
+/*.socialicons a{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.socialicons span{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+
+
